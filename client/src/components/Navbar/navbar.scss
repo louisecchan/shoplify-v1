@@ -1,0 +1,69 @@
+.navbar {
+  height: 80px;
+
+  .wrapper {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .item {
+      display: flex;
+      align-items: center;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+    }
+
+    .left {
+      display: flex; // items listed horizontally
+      align-items: center; // item centered vertically
+      gap: 25px;
+    }
+
+    .center {
+      font-size: 30px;
+      letter-spacing: 2px;
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .icons {
+      display: flex;
+      gap: 15px;
+      color: #413f3f;
+      cursor: pointer;
+
+      .muiIcons {
+        font-size: 16px;
+        align-content: center;
+        justify-content: center;
+      }
+    }
+
+    .cartIcon {
+      position: relative; // because children is position:absolute
+      span {
+        font-size: 8px;
+        width: 12px;
+        height: 12px;
+        background-color: #000;
+        color: #fff;
+        position: absolute;
+        right: -5px;
+        top: -5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+      }
+    }
+  }
+}

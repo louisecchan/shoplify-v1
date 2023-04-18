@@ -1,5 +1,8 @@
 .navbar {
   height: 80px;
+  font-family: "on9jai";
+  letter-spacing: -0.1px;
+  margin-top: 12px;
 
   .wrapper {
     padding: 10px 30px;
@@ -7,10 +10,14 @@
     justify-content: space-between;
     align-items: center;
 
+    .link:visited {
+      text-decoration: none;
+    }
+
     .item {
       display: flex;
       align-items: center;
-      font-size: 0.8rem;
+      font-size: 11.5px;
       text-transform: uppercase;
     }
 
@@ -18,21 +25,42 @@
       display: flex; // items listed horizontally
       align-items: center; // item centered vertically
       gap: 25px;
+      .link:hover {
+        text-decoration: underline;
+      }
     }
 
     .center {
       font-size: 30px;
-      letter-spacing: 2px;
+      font-weight: 600;
+      .link {
+        text-decoration: none;
+      }
     }
 
     .right {
       display: flex;
       align-items: center;
       gap: 25px;
+      .link:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .localeImg {
+      height: 16px;
+      cursor: pointer;
+    }
+
+    .arrowIcons {
+      font-size: 24px;
+      margin-left: 1px;
+      color: grey;
     }
 
     .icons {
       display: flex;
+      font-size: 12px;
       gap: 15px;
       color: #413f3f;
       cursor: pointer;
@@ -41,6 +69,13 @@
         font-size: 16px;
         align-content: center;
         justify-content: center;
+      }
+
+      .on9Icons {
+        font-size: 16px;
+        align-content: center;
+        justify-content: center;
+        margin-top: -1px;
       }
     }
 
@@ -53,8 +88,8 @@
         background-color: #000;
         color: #fff;
         position: absolute;
-        right: -5px;
-        top: -5px;
+        right: -4px;
+        top: -4px;
         display: flex;
         align-items: center;
         justify-content: center;

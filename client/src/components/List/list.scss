@@ -1,5 +1,7 @@
 .list {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+
+  .card {
+    padding: 25px;
+  }
 }

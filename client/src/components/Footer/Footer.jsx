@@ -14,29 +14,32 @@ const Footer = () => {
           <span>New Arrivals</span>
         </div>
         <div className="item">
-          <h1>Links</h1>
-          <span>FAQ</span>
-          <span>Pages</span>
-          <span>Stores</span>
-          <span>Compare</span>
-          <span>Cookies</span>
+          <h1>Customer Care</h1>
+          <span>Track An Order</span>
+          <span>Create A Return</span>
+          <span>FAQs</span>
+          <span>Delivery</span>
+          <span>Privacy Policy</span>
         </div>
         <div className="item">
           <h1>About</h1>
           <span>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
-            pariatur debitis dolor repellendus excepturi ad adipisci fugit
-            corrupti magni, neque aliquid, nam magnam. Tenetur iste officiis,
-            maxime a sapiente soluta.
+            Shoplify is a destination of discovery for all genders – a place to
+            be inspired, to find connection and to explore all aspects of a
+            stylish life. With a selection of more than 500 of the world's most
+            sought-after brands, we're on a mission to provide men with
+            everything they need to look their best, and through our content and
+            community offering we're helping them to feel their best, too.
           </span>
         </div>
         <div className="item">
           <h1>Contact</h1>
           <span>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
-            pariatur debitis dolor repellendus excepturi ad adipisci fugit
-            corrupti magni, neque aliquid, nam magnam. Tenetur iste officiis,
-            maxime a sapiente soluta.
+            For any enquiries please contact us.
+            <br /> We're available 24 hours, 7 days a week. <br /> <br />
+            Email us at customercare@shoplify.com <br />
+            <br />
+            Call us on 0800 088 6808
           </span>
         </div>
       </div>

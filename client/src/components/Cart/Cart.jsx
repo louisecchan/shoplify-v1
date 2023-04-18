@@ -44,10 +44,10 @@ const Cart = () => {
           <img src={process.env.REACT_APP_UPLOAD_URL + item.img} alt="" />
           <div className="details">
             <h1>{item.title}</h1>
-            <p>{item.desc?.substring(0, 100)}</p>
+            <p>{item.desc?.substring(0, 50)}</p>
             {/* if there's no description, no need to execute the substring function */}
             <div className="price">
-              {item.quantity} x ${item.price}
+              {item.quantity} x £{item.price}
             </div>
           </div>
           <DeleteOutlinedIcon
@@ -58,7 +58,7 @@ const Cart = () => {
       ))}
       <div className="total">
         <span>SUBTOTAL</span>
-        <span>${totalPrice()}</span>
+        <span>£{totalPrice()}</span>
       </div>
       <button onClick={handlePayment}>PROCEED TO CHECKOUT</button>
       <span className="reset" onClick={() => dispatch(resetCart())}>

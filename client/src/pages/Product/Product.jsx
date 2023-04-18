@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./product.scss";
-import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import useFetch from "../../hooks/useFetch";
 import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -51,8 +49,8 @@ const Product = () => {
             </div>
           </div>
           <div className="right">
-            <h1>{data?.attributes?.title}</h1>
-            <span className="price">${data?.attributes?.price}</span>
+            <h1 className="product-title">{data?.attributes?.title}</h1>
+            <span className="price">£{data?.attributes?.price}</span>
             <p>{data?.attributes?.desc}</p>
             <div className="quantity">
               <button
@@ -80,18 +78,13 @@ const Product = () => {
                 )
               }
             >
-              <AddShoppingCartIcon className="cartIcons" /> ADD TO CART
+              ADD TO BAG
             </button>
-            <div className="links">
-              <div className="items">
-                <FavoriteBorderIcon className="favoriteIcons" /> ADD TO WISH
-                LIST
-              </div>
-            </div>
+            <button className="wishlist">ADD TO WISH LIST</button>
             <div className="info">
-              <span>Vendor: Polo</span>
-              <span>Product Type: T-Shirt</span>
-              <span>Tag: T-Shirt, Women, Top</span>
+              <span>Vendor: Lorem ipsum dolor sit amet</span>
+              <span>Product Type: Pellentesque dapibus</span>
+              <span>Tag: Ut quis, Tincidunt, Praesent</span>
             </div>
             <hr />
             <div className="info">
@@ -100,6 +93,7 @@ const Product = () => {
               <span>ADDITIONAL INFORMATION</span>
               <hr />
               <span>FAQ</span>
+              <hr />
             </div>
           </div>
         </>

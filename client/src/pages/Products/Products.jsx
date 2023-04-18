@@ -64,6 +64,7 @@ const Products = () => {
               value="asc"
               name="price"
               onChange={(e) => setSort("asc")}
+              defaultChecked
             />
             <label htmlFor="asc">Price (Lowest first)</label>
           </div>
@@ -79,13 +80,14 @@ const Products = () => {
           </div>
         </div>
       </div>
-      <div className="right"></div>
-      <List
-        catId={catId}
-        maxPrice={maxPrice}
-        sort={sort}
-        subCats={selectedSubCats}
-      />
+      <div className="right">
+        <List
+          catId={catId}
+          maxPrice={maxPrice}
+          sort={sort}
+          subCats={selectedSubCats}
+        />
+      </div>
     </div>
   );
 };

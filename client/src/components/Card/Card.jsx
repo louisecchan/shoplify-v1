@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
 const Card = ({ item }) => {
   return (
-    <Link to={`product/${item.id}`}>
+    <Link to={`../product/${item.id}`} className="normal-text">
       <div className="card">
         <div className="image">
-          {item?.attributes.isNew && <span>New In</span>}
+          {item?.attributes.isNew && <span>NEW IN</span>}
           <img
             src={
               process.env.REACT_APP_UPLOAD_URL +
@@ -26,12 +26,10 @@ const Card = ({ item }) => {
           />
         </div>
         <h2>{item?.attributes.title}</h2>
-        <div className="prices">
-          <h3>${item.oldPrice || item?.attributes.price + 20}</h3>
-          <h3>${item?.attributes.price}</h3>
+        <div>
+          <h3 className="price-original-text">£{item?.attributes.price}</h3>
         </div>
       </div>
-      ;
     </Link>
   );
 };

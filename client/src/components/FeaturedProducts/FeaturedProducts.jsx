@@ -13,9 +13,10 @@ const FeaturedProducts = ({ type }) => {
       <div className="top">
         <h1>{type} products</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
-          fuga minus ea omnis fugit quis ut quod qui officiis! Sapiente eum
-          harum mollitia praesentium ea doloribus totam atque natus repellendus.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sapiente
+          officiis sint ipsam libero. Omnis, numquam excepturi porro nisi quae
+          non eius culpa odio, doloremque laboriosam quisquam eligendi fugit
+          inventore.
         </p>
       </div>
       <div className="bottom">

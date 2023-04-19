@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import Product from "./pages/Product/Product";
 import Products from "./pages/Products/Products";
 import Story from "./pages/Story/Story";
+import Stores from "./pages/Stores/Stores";
 
 // stylesheet
 import "./app.scss";
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "/story",
         element: <Story />,
+      },
+      {
+        path: "/stores",
+        element: <Stores />,
       },
     ],
   },

@@ -1,10 +1,20 @@
 .featuredProducts {
   margin: 100px 200px;
 
+  .reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
   .top {
     display: flex;
     align-content: start;
-    // align-items: center;
     justify-content: space-between;
     margin-bottom: 100px;
     margin-left: 20px;

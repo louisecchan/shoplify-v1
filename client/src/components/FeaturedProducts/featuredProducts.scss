@@ -3,24 +3,31 @@
 
   .top {
     display: flex;
-    align-items: center;
+    align-content: start;
+    // align-items: center;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
 
     h1 {
       flex: 2;
       text-transform: capitalize;
+      font-family: on9jai2;
+      font-size: 30px;
     }
 
     p {
       flex: 3;
       color: #808080;
+      font-size: 15px;
+      padding-top: 50px;
     }
   }
+}
 
-  .bottom {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-  }
+.bottom {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }

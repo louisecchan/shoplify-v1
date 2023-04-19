@@ -67,8 +67,8 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="icons">
-            <SearchIcon className="muiIcons" />
-            <StarIcon className="on9Icons" />
+            {/* <SearchIcon className="muiIcons" />
+            <StarIcon className="on9Icons" /> */}
             <div className="cartIcon" onClick={() => setOpen(!open)}>
               <WorkOutlineIcon className="muiIcons" />
               <span>{products.length}</span>

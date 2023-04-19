@@ -32,7 +32,7 @@ const Categories = () => {
       <div className="col">
         <div className="row">
           <img
-            src="https://res.cloudinary.com/dlmgs0z2s/image/upload/v1681220158/category-fashion_vojvfg.png"
+            src="https://res.cloudinary.com/dlmgs0z2s/image/upload/v1681932506/margiela_uhylsy.jpg"
             alt=""
           />
           <button>

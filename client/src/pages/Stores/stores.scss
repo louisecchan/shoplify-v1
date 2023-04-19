@@ -3,8 +3,7 @@
   justify-content: space-between;
 
   .content {
-    margin: 50px;
-    padding: 50px;
+    flex: 1;
     font-size: 14px;
     color: rgb(100, 98, 98);
     line-height: 1.5;
@@ -12,7 +11,6 @@
   }
 
   span {
-    width: 80px;
     background: white;
   }
 }

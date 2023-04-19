@@ -3,9 +3,9 @@ import "./story.scss";
 
 const Story = () => {
   return (
-    <div className="wrapper">
+    <div className="containerStory">
       <span></span>
-      <div className="content">
+      <div className="contentStory fade-in">
         We think of ourselves as hands-on curator. For us make is integral to
         our design philosophy. It is crucial how a piece of clothing feels when
         worn. We’ve always wanted clothes to be the way we drew them – relaxed

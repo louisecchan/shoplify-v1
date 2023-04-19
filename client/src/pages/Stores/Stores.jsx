@@ -1,10 +1,11 @@
 import React from "react";
+import "./stores.scss";
 
 const Stores = () => {
   return (
-    <div className="wrapper">
+    <div className="containerStore fade-in">
       <span></span>
-      <div className="content">
+      <div className="shop">
         147 Shoreditch High St,
         <br />
         London E1 6JE
@@ -12,7 +13,7 @@ const Stores = () => {
         <span>+44 (0) 20 3848 8860</span>
         <br />
       </div>
-      <div className="content">
+      <div className="shop">
         116 Regent's Park Rd,
         <br />
         London NW1 8UR
@@ -20,7 +21,7 @@ const Stores = () => {
         <span> +44 (0) 20 7253 1644</span>
         <br />
       </div>
-      <div className="content">
+      <div className="shop">
         52 Rochester Walk
         <br />
         London SE1 9AF

@@ -19,7 +19,7 @@ import { API } from "../../constant";
 import { setToken } from "../../helpers";
 import "./login.scss";
 
-const SignIn = () => {
+const Login = () => {
   const { isDesktopView } = useScreenSize();
   const navigate = useNavigate();
 
@@ -129,4 +129,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default Login;

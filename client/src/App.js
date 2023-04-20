@@ -9,6 +9,8 @@ import Story from "./pages/Story/Story";
 import Stores from "./pages/Stores/Stores";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
+import Profile from "./pages/Profile/Profile";
+import { Col, Row } from "antd";
 
 // stylesheet
 import "./app.scss";
@@ -58,6 +60,10 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login />,
+      },
+      {
+        path: "/profile",
+        element: <Profile />,
       },
     ],
   },

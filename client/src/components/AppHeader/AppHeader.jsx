@@ -11,7 +11,7 @@ const AppHeader = () => {
 
   const handleLogout = () => {
     removeToken();
-    navigate("/signin", { replace: true });
+    navigate("/login", { replace: true });
   };
 
   return (
@@ -35,15 +35,15 @@ const AppHeader = () => {
           </>
         ) : (
           <>
-            <Button className="auth_button_login" href="/signin" type="link">
+            <Button className="auth_button_login" href="/login" type="link">
               Login
             </Button>
             <Button
               className="auth_button_signUp"
-              href="/signup"
+              href="/register"
               type="primary"
             >
-              SignUp
+              Sign Up
             </Button>
           </>
         )}

@@ -71,7 +71,7 @@ const Login = () => {
       <Row align="middle">
         <Col span={isDesktopView ? 8 : 24} offset={isDesktopView ? 8 : 0}>
           <Card className="loginCard" bordered={false}>
-            <h1 className="loginCard-title">Log in</h1>
+            <h1 className="loginCard-title fade-in">Log in</h1>
             {error ? (
               <Alert
                 className="alert_error"
@@ -81,18 +81,12 @@ const Login = () => {
                 afterClose={() => setError("")}
               />
             ) : null}
-            <Form
-              className="loginForm"
-              layout="vertical"
-              onFinish={onFinish}
-              autoComplete="off"
-            >
+            <Form layout="vertical" onFinish={onFinish} autoComplete="off">
               <Form.Item
                 label="Email"
                 name="email"
                 rules={[
                   {
-                    // required: true,
                     type: "email",
                   },
                 ]}

@@ -67,7 +67,7 @@ const Register = () => {
       <Row align="middle">
         <Col span={isDesktopView ? 8 : 24} offset={isDesktopView ? 8 : 0}>
           <Card className="registerCard" bordered={false}>
-            <h1 className="registerCard-title">Register</h1>
+            <h1 className="registerCard-title fade-in">Register</h1>
             {error ? (
               <Alert
                 className="alert_error"

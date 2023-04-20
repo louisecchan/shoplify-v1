@@ -21,7 +21,7 @@ const Navbar = () => {
           </div>
           <div className="item">
             <Link className="link un" to="/">
-              New In
+              Sale
             </Link>
           </div>
           <div className="item">

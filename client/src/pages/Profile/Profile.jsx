@@ -4,6 +4,7 @@ import { useAuthContext } from "../../context/AuthContext";
 import { API } from "../../constant";
 import { useState } from "react";
 import { getToken } from "../../helpers";
+import "./profile.scss";
 
 const Profile = () => {
   const [loading, setLoading] = useState(false);
@@ -24,7 +25,7 @@ const Profile = () => {
       const responseData = await response.json();
 
       setUser(responseData);
-      message.success("Data saved successfully!");
+      message.success("Profile updated successfully!");
     } catch (error) {
       console.error(Error);
       message.error("Error While Updating the Profile!");
@@ -38,7 +39,8 @@ const Profile = () => {
   }
 
   return (
-    <Card className="profile_page_card">
+    <Card className="profileCard fade-in" bordered={false}>
+      <h1 className="profileCard-title">Profile</h1>
       <Form
         layout="vertical"
         initialValues={{
@@ -60,13 +62,13 @@ const Profile = () => {
               name="username"
               rules={[
                 {
-                  required: true,
+                  // required: true,
                   message: "Username is required!",
                   type: "string",
                 },
               ]}
             >
-              <Input placeholder="Username" />
+              <Input className="inputContent" />
             </Form.Item>
           </Col>
           <Col md={8} lg={8} sm={24} xs={24}>
@@ -75,18 +77,18 @@ const Profile = () => {
               name="email"
               rules={[
                 {
-                  required: true,
+                  // required: true,
                   message: "Email is required!",
                   type: "email",
                 },
               ]}
             >
-              <Input placeholder="Email" />
+              <Input className="inputContent" />
             </Form.Item>
           </Col>
           <Col md={8} lg={8} sm={24} xs={24}>
             <Form.Item
-              label="Avatar Url"
+              label="Avatar URL"
               name="avatar_url"
               rules={[
                 {
@@ -94,22 +96,21 @@ const Profile = () => {
                 },
               ]}
             >
-              <Input placeholder="Avatar Url" />
+              <Input className="inputContent" />
             </Form.Item>
           </Col>
           <Col span={24}>
             <Form.Item
-              label="About"
+              label="Bio"
               name="about"
               rules={[
                 {
-                  required: true,
                   type: "string",
                   max: 120,
                 },
               ]}
             >
-              <Input.TextArea placeholder="About" rows={6} />
+              <Input className="inputContent" rows={6} />
             </Form.Item>
           </Col>
           <Col md={8} lg={8} sm={24} xs={24}>
@@ -122,7 +123,7 @@ const Profile = () => {
                 },
               ]}
             >
-              <Input placeholder="Twitter Username" />
+              <Input className="inputContent" />
             </Form.Item>
           </Col>
           <Col md={8} lg={8} sm={24} xs={24}>
@@ -135,7 +136,7 @@ const Profile = () => {
                 },
               ]}
             >
-              <Input placeholder="LinkedIn Username" />
+              <Input className="inputContent" />
             </Form.Item>
           </Col>
           <Col md={8} lg={8} sm={24} xs={24}>
@@ -148,12 +149,12 @@ const Profile = () => {
                 },
               ]}
             >
-              <Input placeholder="Github Username" />
+              <Input className="inputContent" />
             </Form.Item>
           </Col>
-          <Col md={8} lg={8} sm={24} xs={24}>
+          <Col span={24}>
             <Form.Item
-              label="Website Url"
+              label="Website URL"
               name="website_url"
               rules={[
                 {
@@ -161,24 +162,19 @@ const Profile = () => {
                 },
               ]}
             >
-              <Input placeholder="Website Url" />
+              <Input className="inputContent" />
             </Form.Item>
           </Col>
         </Row>
-        <Button
-          className="profile_save_btn"
-          htmlType="submit"
-          type="primary"
-          size="large"
-        >
+        <button className="profileButton" htmlType="submit" size="large">
           {loading ? (
             <>
               <Spin size="small" /> Saving
             </>
           ) : (
-            "Save"
+            "SAVE"
           )}
-        </Button>
+        </button>
       </Form>
     </Card>
   );

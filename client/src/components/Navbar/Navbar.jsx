@@ -57,12 +57,12 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="item">
-            <Link className="link un" to="/">
+            <Link className="link un" to="/login">
               Login
             </Link>
           </div>
           <div className="item">
-            <Link className="link un" to="/">
+            <Link className="link un" to="/register">
               Register
             </Link>
           </div>

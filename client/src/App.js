@@ -7,6 +7,8 @@ import Product from "./pages/Product/Product";
 import Products from "./pages/Products/Products";
 import Story from "./pages/Story/Story";
 import Stores from "./pages/Stores/Stores";
+import Login from "./pages/Login/Login";
+import Register from "./pages/Register/Register";
 
 // stylesheet
 import "./app.scss";
@@ -48,6 +50,14 @@ const router = createBrowserRouter([
       {
         path: "/stores",
         element: <Stores />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
       },
     ],
   },

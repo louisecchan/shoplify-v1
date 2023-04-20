@@ -1,6 +1,6 @@
 import {
   Alert,
-  Button,
+  // Button,
   Card,
   Col,
   Form,
@@ -17,6 +17,7 @@ import { useAuthContext } from "../../context/AuthContext";
 import useScreenSize from "../../hooks/useScreenSize";
 import { API } from "../../constant";
 import { setToken } from "../../helpers";
+import "./login.scss";
 
 const SignIn = () => {
   const { isDesktopView } = useScreenSize();
@@ -69,7 +70,8 @@ const SignIn = () => {
     <Fragment>
       <Row align="middle">
         <Col span={isDesktopView ? 8 : 24} offset={isDesktopView ? 8 : 0}>
-          <Card title="Log in">
+          <Card className="loginCard" bordered={false}>
+            <h1 className="loginCard-title">Log in</h1>
             {error ? (
               <Alert
                 className="alert_error"
@@ -80,7 +82,7 @@ const SignIn = () => {
               />
             ) : null}
             <Form
-              name="basic"
+              className="loginForm"
               layout="vertical"
               onFinish={onFinish}
               autoComplete="off"
@@ -90,7 +92,7 @@ const SignIn = () => {
                 name="email"
                 rules={[
                   {
-                    required: true,
+                    // required: true,
                     type: "email",
                   },
                 ]}
@@ -101,24 +103,25 @@ const SignIn = () => {
               <Form.Item
                 label="Password"
                 name="password"
-                rules={[{ required: true }]}
+                // rules={[{ required: true }]}
               >
                 <Input.Password placeholder="Password" />
               </Form.Item>
 
               <Form.Item>
-                <Button
-                  type="primary"
-                  htmlType="submit"
-                  className="login_submit_btn"
-                >
-                  Login {isLoading && <Spin size="small" />}
-                </Button>
+                <button className="loginButton" htmlType="submit">
+                  LOGIN {isLoading && <Spin size="small" />}
+                </button>
               </Form.Item>
             </Form>
             <Typography.Paragraph className="form_help_text">
-              New to Shoplify? <Link to="/signup">Sign Up</Link>
+              Don't have an account?
             </Typography.Paragraph>
+            <Link to="/register">
+              <button className="loginButton" htmlType="submit">
+                CREATE ACCOUNT
+              </button>
+            </Link>
           </Card>
         </Col>
       </Row>

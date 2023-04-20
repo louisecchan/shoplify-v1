@@ -4,9 +4,9 @@ import Cart from "../Cart/Cart";
 import { useSelector } from "react-redux";
 import "./navbar.scss";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import SearchIcon from "@mui/icons-material/Search";
 import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
-import { ReactComponent as StarIcon } from "../../icons/star.svg";
+// import SearchIcon from "@mui/icons-material/Search";
+// import { ReactComponent as StarIcon } from "../../icons/star.svg";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -21,7 +21,7 @@ const Navbar = () => {
           </div>
           <div className="item">
             <Link className="link un" to="/">
-              What's New
+              New In
             </Link>
           </div>
           <div className="item">

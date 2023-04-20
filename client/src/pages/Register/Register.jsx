@@ -17,6 +17,7 @@ import { useAuthContext } from "../../context/AuthContext";
 import useScreenSize from "../../hooks/useScreenSize";
 import { API } from "../../constant";
 import { setToken } from "../../helpers";
+import "./register.scss";
 
 const Register = () => {
   const { isDesktopView } = useScreenSize();
@@ -65,7 +66,8 @@ const Register = () => {
     <Fragment>
       <Row align="middle">
         <Col span={isDesktopView ? 8 : 24} offset={isDesktopView ? 8 : 0}>
-          <Card title="Register">
+          <Card className="registerCard" bordered={false}>
+            <h1 className="registerCard-title">Register</h1>
             {error ? (
               <Alert
                 className="alert_error"
@@ -76,7 +78,7 @@ const Register = () => {
               />
             ) : null}
             <Form
-              name="basic"
+              className="registerForm"
               layout="vertical"
               onFinish={onFinish}
               autoComplete="off"
@@ -86,7 +88,7 @@ const Register = () => {
                 name="username"
                 rules={[
                   {
-                    required: true,
+                    // required: true,
                     type: "string",
                   },
                 ]}
@@ -98,7 +100,7 @@ const Register = () => {
                 name="email"
                 rules={[
                   {
-                    required: true,
+                    // required: true,
                     type: "email",
                   },
                 ]}
@@ -109,24 +111,25 @@ const Register = () => {
               <Form.Item
                 label="Password"
                 name="password"
-                rules={[{ required: true }]}
+                // rules={[{ required: true }]}
               >
                 <Input.Password placeholder="Password" />
               </Form.Item>
 
               <Form.Item>
-                <Button
-                  type="primary"
-                  htmlType="submit"
-                  className="login_submit_btn"
-                >
-                  Submit {isLoading && <Spin size="small" />}
-                </Button>
+                <button className="registerButton" htmlType="submit">
+                  CREATE ACCOUNT {isLoading && <Spin size="small" />}
+                </button>
               </Form.Item>
             </Form>
             <Typography.Paragraph className="form_help_text">
-              Already have an account? <Link to="/signin">Sign In</Link>
+              Already have an account?
             </Typography.Paragraph>
+            <Link to="/login">
+              <button className="loginButton" htmlType="submit">
+                LOGIN
+              </button>
+            </Link>
           </Card>
         </Col>
       </Row>

@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="left">
           <div className="item">
             <img src="/img/locale.png" className="localeImg" alt="" />
-            <KeyboardArrowDownIcon className="arrowIcons" />
+            {/* <KeyboardArrowDownIcon className="arrowIcons" /> */}
           </div>
           <div className="item">
             <Link className="link un" to="/">

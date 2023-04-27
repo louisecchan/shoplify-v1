@@ -1,3 +1,37 @@
+@media screen and (max-width: 420px) {
+  .product {
+    flex-direction: column !important;
+
+    .left {
+      width: 72vw !important;
+      gap: 1rem !important;
+
+      .images {
+        // flex: 1 !important;
+        img {
+          height: 5rem !important ;
+          object-fit: cover !important;
+        }
+      }
+      .mainImg {
+        flex: 3 !important;
+      }
+    }
+
+    .right {
+      width: 70vw !important;
+
+      .add {
+        width: 100% !important;
+      }
+
+      .wishlist {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
 .product {
   padding: 20px 50px;
   display: flex;

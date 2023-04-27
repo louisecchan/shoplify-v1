@@ -4,6 +4,7 @@ import "./footer.scss";
 const Footer = () => {
   return (
     <div className="footer">
+      <hr />
       <div className="top">
         <div className="item">
           <h1>Categories</h1>
@@ -23,7 +24,7 @@ const Footer = () => {
         </div>
         <div className="item">
           <h1>About</h1>
-          <p>
+          <p className="about-desc">
             Shoplify is a destination of discovery for all genders – a place to
             be inspired, to find connection and to explore all aspects of a
             stylish life. With a selection of more than 500 of the world's most

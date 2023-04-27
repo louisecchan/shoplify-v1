@@ -1,0 +1,29 @@
+.products {
+  padding: 30px 50px;
+  display: flex;
+}
+.products .left {
+  flex: 1;
+  height: 100%;
+  top: 50px;
+}
+.products .left .filterItem {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+.products .left .filterItem h2 {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.products .left .filterItem .inputItem {
+  margin-bottom: 10px;
+}
+.products .left .filterItem .inputItem label {
+  margin-left: 10px;
+  font-size: 12px !important;
+}
+.products .left .right {
+  flex: 1;
+}/*# sourceMappingURL=products.css.map */

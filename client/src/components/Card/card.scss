@@ -1,3 +1,10 @@
+@media screen and (max-width: 420px) {
+  .card {
+    width: 100vw !important;
+    height: 100vh;
+  }
+}
+
 .normal-text {
   color: black;
   text-decoration: none;

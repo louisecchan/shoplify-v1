@@ -1,0 +1,38 @@
+.containerStore {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 80px;
+  margin-top: 50px;
+  padding-bottom: 250px;
+  margin-bottom: 50px;
+  padding-left: 170px;
+  -webkit-font-smoothing: antialiased;
+}
+.containerStore .shop {
+  flex: 2;
+  font-size: 14px;
+  color: rgb(100, 98, 98);
+  line-height: 1.5;
+  max-width: 500px;
+}
+.containerStore span {
+  flex: 1;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 3s;
+  transition: ease-in;
+  -webkit-transition: ease-in;
+  -moz-transition: ease-in;
+  -ms-transition: ease-in;
+  -o-transition: ease-in;
+  -webkit-animation: fadeIn 3s;
+}/*# sourceMappingURL=stores.css.map */

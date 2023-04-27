@@ -1,0 +1,161 @@
+.hamburger {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.hamburger:hover {
+  background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .navbar .wrapper .link {
+    display: none;
+  }
+  .navbar .wrapper .left .item {
+    display: none;
+  }
+  .navbar .wrapper .right .item {
+    display: none;
+  }
+  .navbar .wrapper .right .icons {
+    display: none;
+  }
+  .navbar.expanded .wrapper .link {
+    display: block;
+  }
+  .navbar.expanded .wrapper .left .item {
+    display: block;
+  }
+  .navbar.expanded .wrapper .right .item {
+    display: block;
+  }
+  .navbar.expanded .wrapper .right .icons {
+    display: block;
+  }
+}
+.navbar {
+  height: 80px;
+  font-family: "on9jai";
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.1px;
+  margin-top: 18px;
+}
+.navbar .wrapper {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.navbar .wrapper .link:hover {
+  text-decoration: none;
+  color: #000000;
+}
+.navbar .wrapper .link:visited {
+  text-decoration: none;
+  color: #000000;
+}
+.navbar .wrapper .un {
+  display: inline-block;
+  padding-bottom: 1px;
+  background-image: linear-gradient(#575656 0 0);
+  background-position: 0 100%; /*OR bottom left*/
+  background-size: 0% 0.5px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s, background-position 0s 0.3s; /*change after the size immediately*/
+}
+.navbar .wrapper .un:hover {
+  background-position: 100% 100%; /*OR bottom right*/
+  background-size: 100% 1px;
+  text-decoration: none;
+  color: #000000;
+}
+.navbar .wrapper .un:visited {
+  text-decoration: none;
+  color: #000000;
+}
+.navbar .wrapper .item {
+  display: flex;
+  align-items: center;
+  font-size: 11.5px;
+  text-transform: uppercase;
+}
+.navbar .wrapper .left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.navbar .wrapper .center {
+  font-size: 30px;
+  font-weight: 600;
+}
+.navbar .wrapper .center .link {
+  text-decoration: none;
+}
+.navbar .wrapper .right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.navbar .wrapper .localeImg {
+  height: 16px;
+  cursor: pointer;
+}
+.navbar .wrapper .arrowIcons {
+  font-size: 24px;
+  margin-left: 1px;
+  color: grey;
+}
+.navbar .wrapper .icons {
+  display: flex;
+  font-size: 12px;
+  gap: 15px;
+  color: #413f3f;
+  cursor: pointer;
+}
+.navbar .wrapper .icons .muiIcons {
+  font-size: 16px;
+  align-content: center;
+  justify-content: center;
+}
+.navbar .wrapper .icons .on9Icons {
+  font-size: 16px;
+  align-content: center;
+  justify-content: center;
+  margin-top: -1px;
+}
+.navbar .wrapper .cartIcon {
+  position: relative;
+}
+.navbar .wrapper .cartIcon span {
+  font-size: 8px;
+  width: 12px;
+  height: 12px;
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  right: -4px;
+  top: -4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}/*# sourceMappingURL=navbar.css.map */

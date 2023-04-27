@@ -1,0 +1,34 @@
+.containerStory {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  -webkit-font-smoothing: antialiased;
+}
+.containerStory .contentStory {
+  flex: 2;
+  font-size: 14px;
+  color: rgb(100, 98, 98);
+  line-height: 1.5;
+}
+.containerStory .div > fade-in {
+  animation: fadeIn 3s;
+  transition: ease-in;
+  -webkit-transition: ease-in;
+  -moz-transition: ease-in;
+  -ms-transition: ease-in;
+  -o-transition: ease-in;
+  -webkit-animation: fadeIn 3s;
+}
+.containerStory span {
+  flex: 1;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=story.css.map */

@@ -1,7 +1,11 @@
 @media screen and (max-width: 420px) {
-  .container {
-    width: 100vw !important;
-    height: 100vh !important;
+  .slider {
+    width: 100% !important;
+
+    .container {
+      // width: 100% !important;
+      // height: auto !important;
+    }
   }
 }
 

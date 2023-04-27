@@ -45,17 +45,30 @@
       position: absolute;
       min-width: 100px;
       width: fit-content;
+      background-color: white;
+      color: black;
+      border: 0.5px solid black;
       text-transform: uppercase;
       font-size: 11px;
       height: 50px;
       padding: 10px;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
+      top: 0; // position the text in center
+      bottom: 0; // position the text in center
+      left: 0; // position the text in center
+      right: 0; // position the text in center
       margin: auto;
       cursor: pointer;
       font-weight: 500;
+    }
+
+    button:hover {
+      background-color: black;
+      color: white;
+      transition: 0.3s ease;
+      -webkit-transition: 0.3s ease;
+      -moz-transition: 0.3s ease;
+      -ms-transition: 0.3s ease;
+      -o-transition: 0.3s ease;
     }
 
     img {

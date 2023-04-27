@@ -9,6 +9,8 @@ const Slider = () => {
   const data = [
     "https://res.cloudinary.com/dlmgs0z2s/image/upload/v1681136413/slider-photo-1_hbwhrj.jpg",
     "https://res.cloudinary.com/dlmgs0z2s/image/upload/v1681138564/slider-photo-3_huuszj.jpg",
+    "https://res.cloudinary.com/dlmgs0z2s/image/upload/v1682610428/slider-v-1_un6du6.jpg",
+    "https://res.cloudinary.com/dlmgs0z2s/image/upload/v1682610428/slider-v-2_uwdmqi.jpg",
   ];
 
   useEffect(() => {
@@ -22,11 +24,18 @@ const Slider = () => {
   return (
     <div className="slider">
       <div
-        className="container"
+        className="container-1"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
         <img src={data[0]} alt="" />
         <img src={data[1]} alt="" />
+      </div>
+      <div
+        className="container-2"
+        style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
+      >
+        <img src={data[2]} alt="" />
+        <img src={data[3]} alt="" />
       </div>
     </div>
   );

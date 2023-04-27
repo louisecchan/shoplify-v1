@@ -45,6 +45,27 @@
       }
     }
   }
+
+  .navbar.expanded {
+    .wrapper {
+      .link {
+        display: block;
+      }
+      .left {
+        .item {
+          display: block;
+        }
+      }
+      .right {
+        .item {
+          display: block;
+        }
+        .icons {
+          display: block;
+        }
+      }
+    }
+  }
 }
 
 .navbar {

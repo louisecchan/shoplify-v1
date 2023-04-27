@@ -9,7 +9,6 @@ const Slider = () => {
   const data = [
     "https://res.cloudinary.com/dlmgs0z2s/image/upload/v1681136413/slider-photo-1_hbwhrj.jpg",
     "https://res.cloudinary.com/dlmgs0z2s/image/upload/v1681138564/slider-photo-3_huuszj.jpg",
-    "https://res.cloudinary.com/dlmgs0z2s/image/upload/v1681916339/be-well.gif",
   ];
 
   useEffect(() => {

@@ -6,18 +6,25 @@ import "./navbar.scss";
 import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
 
 const Navbar = () => {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
   const [open, setOpen] = useState(false);
   const products = useSelector((state) => state.cart.products);
   return (
     <div className="navbar">
       <div className="wrapper">
-        <button className="hamburger">
+        <button
+          className="hamburger"
+          onClick={() => {
+            setIsNavExpanded(!isNavExpanded);
+          }}
+        >
           <svg viewBox="0 0 100 80" width="40" height="40">
             <rect width="100" height="3"></rect>
             <rect y="30" width="100" height="3"></rect>
             <rect y="60" width="100" height="3"></rect>
           </svg>
         </button>
+        {/* <div className={isNavExpanded ? "navbar expanded" : "navbar"}> */}
         <div className="left">
           <div className="item">
             <img src="/img/locale.png" className="localeImg" alt="" />
@@ -43,6 +50,7 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
+        {/* </div> */}
         <div className="center">
           <Link className="link" to="/">
             SHOPLIFY

@@ -1,9 +1,17 @@
+@media screen and (max-width: 420px) {
+  .containerStory {
+    height: 160vh !important;
+    padding-bottom: 10rem !important;
+    padding-left: 1rem !important;
+  }
+}
+
 .containerStory {
+  height: 100vh;
   display: flex;
   justify-content: space-between;
   padding-left: 30px;
   padding-top: 100px;
-  padding-bottom: 50px;
   -webkit-font-smoothing: antialiased;
 
   .contentStory {

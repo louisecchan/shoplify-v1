@@ -126,7 +126,7 @@ const Register = () => {
               Already have an account?
             </Typography.Paragraph>
             <Link to="/login">
-              <button className="loginButton" htmlType="submit">
+              <button className="registerButton" htmlType="submit">
                 LOGIN
               </button>
             </Link>

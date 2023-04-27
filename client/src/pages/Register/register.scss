@@ -1,3 +1,7 @@
+body {
+  height: 100vh;
+}
+
 .registerCard {
   margin-top: 80px;
   margin-bottom: 50px;
@@ -7,6 +11,7 @@
 .registerCard-title {
   font-family: on9jai2;
   padding-bottom: 20px;
+  font-size: 1.5rem;
 }
 
 .registerButton {
@@ -16,6 +21,7 @@
   color: #fff;
   border: none;
   padding: 10px 20px 10px 20px;
+  font-size: 0.8rem;
 }
 
 .registerButton:hover {

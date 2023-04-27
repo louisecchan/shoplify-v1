@@ -2,7 +2,7 @@
   .featuredProducts {
     margin: 5rem 2rem !important;
     width: 100vw !important;
-    height: 100vh;
+    height: 200vh !important;
 
     .top {
       margin-left: 0.2rem !important;
@@ -18,6 +18,15 @@
     }
 
     .bottom {
+      flex-direction: column !important;
+      height: 50vh !important;
+      margin-top: 27rem;
+      position: absolute !important;
+      left: 25% !important;
+      .card-container {
+        height: 100% !important;
+      }
+
       span {
         position: absolute;
         top: 0%;

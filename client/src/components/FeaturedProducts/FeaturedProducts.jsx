@@ -42,7 +42,11 @@ const FeaturedProducts = ({ type }) => {
         ) : loading ? (
           "loading"
         ) : (
-          data?.map((item) => <Card item={item} key={item.id} />)
+          data?.map((item) => (
+            <div className="card-container">
+              <Card item={item} key={item.id} />
+            </div>
+          ))
         )}
       </div>
     </div>

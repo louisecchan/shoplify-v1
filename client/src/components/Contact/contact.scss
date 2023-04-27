@@ -1,8 +1,25 @@
 @media screen and (max-width: 420px) {
-  // .contact {
-  //   width: 100vw !important;
-  //   height: 30vh !important;
-  // }
+  .contact {
+    width: 100vw !important;
+    height: 30vh !important;
+
+    .wrapper {
+      flex-direction: column !important;
+
+      span {
+        padding-right: 0px !important;
+        font-size: 0.8rem !important;
+      }
+
+      input {
+        margin-top: 3rem !important;
+      }
+    }
+
+    .icons {
+      margin-left: -2.5rem !important;
+    }
+  }
 }
 
 .contact {

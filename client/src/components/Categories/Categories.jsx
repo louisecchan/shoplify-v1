@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const Categories = () => {
   return (
     <div className="categories">
+      {/* <div className="categories-container"> */}
       <div className="col">
         <div className="row">
           <img
@@ -29,8 +30,9 @@ const Categories = () => {
           </button>
         </div>
       </div>
+      {/* </div> */}
       <div className="col">
-        <div className="row">
+        <div className="row" id="fashion">
           <img
             src="https://res.cloudinary.com/dlmgs0z2s/image/upload/v1681932506/margiela_uhylsy.jpg"
             alt="Fashion"
@@ -71,7 +73,7 @@ const Categories = () => {
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="row" id="yoga">
           <img
             src="https://res.cloudinary.com/dlmgs0z2s/image/upload/v1681224387/category-yoga-accessories_imimxf.png"
             alt=""

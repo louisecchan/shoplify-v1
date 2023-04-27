@@ -1,3 +1,22 @@
+@media screen and (max-width: 420px) {
+  .categories {
+    flex-direction: column !important;
+    height: 100vh !important;
+
+    .col {
+      flex-direction: row !important;
+    }
+
+    #yoga {
+      display: none;
+    }
+
+    #fashion {
+      height: 30vh !important;
+    }
+  }
+}
+
 .categories {
   display: flex;
   height: 80vh;

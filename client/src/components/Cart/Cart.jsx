@@ -44,7 +44,7 @@ const Cart = () => {
           <img src={process.env.REACT_APP_UPLOAD_URL + item.img} alt="" />
           <div className="details">
             <h1>{item.title}</h1>
-            <p>{item.desc?.substring(0, 50)}</p>
+            <p>{item.desc?.substring(0, 30)}</p>
             {/* if there's no description, no need to execute the substring function */}
             <div className="price">
               {item.quantity} x £{item.price}

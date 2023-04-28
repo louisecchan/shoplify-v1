@@ -83,10 +83,15 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="icons">
-            <li className="cartIcon" onClick={() => setOpen(!open)}>
+            <Link className="cartIcon" onClick={() => setOpen(!open)}>
               <WorkOutlineIcon className="muiIcons" />
               <span>{products.length}</span>
-            </li>
+            </Link>
+          </li>
+          <li className="iconsM">
+            <Link className="cartText un" onClick={() => setOpen(!open)}>
+              Shopping Bag&nbsp;(<span>{products.length}</span>)
+            </Link>
           </li>
         </ul>
       </div>

@@ -6,10 +6,13 @@
 
     hr {
       display: block !important;
+      height: 1px;
+      background-color: #efeeee;
+      border: none;
       margin-bottom: 2rem !important;
-      color: rgb(229, 225, 225) !important;
       width: 83vw !important;
     }
+
     .top {
       flex-direction: column !important;
 

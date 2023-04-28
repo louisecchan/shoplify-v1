@@ -11,79 +11,84 @@ const Navbar = () => {
   const products = useSelector((state) => state.cart.products);
   return (
     <div className="navbar">
-      <div className="wrapper">
-        <button
-          className="hamburger"
-          onClick={() => {
-            setIsNavExpanded(!isNavExpanded);
-          }}
-        >
-          <svg viewBox="0 0 100 80" width="40" height="40">
-            <rect width="100" height="3"></rect>
-            <rect y="30" width="100" height="3"></rect>
-            <rect y="60" width="100" height="3"></rect>
-          </svg>
-        </button>
-        {/* <div className={isNavExpanded ? "navbar expanded" : "navbar"}> */}
-        <div className="left">
-          <div className="item">
+      <button
+        className="hamburger"
+        onClick={() => {
+          setIsNavExpanded(!isNavExpanded);
+        }}
+      >
+        <svg viewBox="0 0 100 80" width="40" height="40">
+          <rect width="100" height="3"></rect>
+          <rect y="30" width="100" height="3"></rect>
+          <rect y="60" width="100" height="3"></rect>
+        </svg>
+      </button>
+      <div
+        className={
+          isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+        }
+      >
+        <ul>
+          <li>
             <img src="/img/locale.png" className="localeImg" alt="" />
-          </div>
-          <div className="item">
-            <Link className="link un" to="/">
+          </li>
+          <li>
+            <Link className="localeImgM link un" to="/">
+              Language
+            </Link>
+          </li>
+          <li>
+            <Link className="sale link un" to="/">
               Sale
             </Link>
-          </div>
-          <div className="item">
+          </li>
+          <li>
             <Link className="link un" to="/products/1">
               Beauty
             </Link>
-          </div>
-          <div className="item">
+          </li>
+          <li>
             <Link className="link un" to="/products/2">
               Fashion
             </Link>
-          </div>
-          <div className="item">
+          </li>
+          <li>
             <Link className="link un" to="/products/3">
               Wellness
             </Link>
-          </div>
-        </div>
-        {/* </div> */}
-        <div className="center">
-          <Link className="link" to="/">
-            SHOPLIFY
-          </Link>
-        </div>
-        <div className="right">
-          <div className="item">
+          </li>
+          <li>
+            <Link className="link shop-name" to="/">
+              SHOPLIFY
+            </Link>
+          </li>
+          <li>
             <Link className="link un" to="/story">
               Our Story
             </Link>
-          </div>
-          <div className="item">
+          </li>
+          <li>
             <Link className="link un" to="/stores">
               Stores
             </Link>
-          </div>
-          <div className="item">
+          </li>
+          <li>
             <Link className="link un" to="/login">
               Login
             </Link>
-          </div>
-          <div className="item">
+          </li>
+          <li>
             <Link className="link un" to="/register">
               Register
             </Link>
-          </div>
-          <div className="icons">
-            <div className="cartIcon" onClick={() => setOpen(!open)}>
+          </li>
+          <li className="icons">
+            <li className="cartIcon" onClick={() => setOpen(!open)}>
               <WorkOutlineIcon className="muiIcons" />
               <span>{products.length}</span>
-            </div>
-          </div>
-        </div>
+            </li>
+          </li>
+        </ul>
       </div>
       {open && <Cart />}
     </div>

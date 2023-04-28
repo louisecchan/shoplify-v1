@@ -1,3 +1,9 @@
+@media screen and (max-width: 420px) {
+  .products {
+    flex-direction: column;
+  }
+}
+
 .products {
   height: 100vh;
   padding: 30px 50px;

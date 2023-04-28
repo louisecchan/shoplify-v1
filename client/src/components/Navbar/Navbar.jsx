@@ -64,8 +64,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link className="link un" to="/story">
-              Our Story
+            <Link className="link shop-nameM" to="/">
+              SHOPLIFY
+            </Link>
+          </li>
+          <li>
+            <Link className="link un story" to="/story">
+              About
             </Link>
           </li>
           <li>

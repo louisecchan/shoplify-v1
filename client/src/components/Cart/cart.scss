@@ -1,13 +1,13 @@
 .cart {
   position: absolute;
-  right: 20px;
-  top: 80px;
+  right: 6rem;
+  top: 5.5rem;
   z-index: 999;
   background-color: #fff;
   padding: 20px;
-  -webkit-box-shadow: 8px 8px 12px 0px rgba(242, 242, 242, 0.37);
-  -moz-box-shadow: 8px 8px 12px 0px rgba(242, 242, 242, 0.37);
-  box-shadow: 8px 8px 12px 0px rgba(242, 242, 242, 0.37);
+  -webkit-box-shadow: 1px 2px 12px -3px rgba(204, 204, 204, 0.59);
+  -moz-box-shadow: 1px 2px 12px -3px rgba(204, 204, 204, 0.59);
+  box-shadow: 1px 2px 12px -3px rgba(204, 204, 204, 0.59);
 
   h1 {
     margin-bottom: 30px;

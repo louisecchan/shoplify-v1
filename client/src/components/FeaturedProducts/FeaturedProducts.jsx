@@ -27,7 +27,7 @@ const FeaturedProducts = ({ type }) => {
 
   return (
     <div className="featuredProducts">
-      <div className="top reveal">
+      <div className="top">
         <h1>{type} products</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sapiente
@@ -36,7 +36,7 @@ const FeaturedProducts = ({ type }) => {
           inventore.
         </p>
       </div>
-      <div className="bottom reveal">
+      <div className="bottom">
         {error ? (
           <span>Something went wrong!</span>
         ) : loading ? (

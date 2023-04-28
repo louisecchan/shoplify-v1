@@ -28,69 +28,69 @@
       }
     }
   }
+}
 
-  .footer {
-    margin: 100px 200px 20px 200px;
-    // margin: top right bottom left
+.footer {
+  margin: 100px 200px 20px 200px;
+  // margin: top right bottom left
 
-    hr {
-      display: none;
-    }
-    .top {
+  hr {
+    display: none;
+  }
+  .top {
+    display: flex;
+    gap: 50px;
+    .item {
+      flex: 1;
+      // to make the items having the same size
       display: flex;
-      gap: 50px;
-      .item {
-        flex: 1;
-        // to make the items having the same size
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        text-align: left;
-        // to make the items displayed vertically
-        h1 {
-          font-size: 0.8rem;
-          text-transform: uppercase;
-        }
+      flex-direction: column;
+      gap: 10px;
+      text-align: left;
+      // to make the items displayed vertically
+      h1 {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+      }
 
-        p,
-        span {
-          font-size: 0.8rem;
-          -webkit-font-smoothing: antialiased;
-          color: #808080;
-        }
+      p,
+      span {
+        font-size: 0.8rem;
+        -webkit-font-smoothing: antialiased;
+        color: #808080;
+      }
 
-        span:hover {
-          cursor: pointer;
-        }
+      span:hover {
+        cursor: pointer;
       }
     }
+  }
 
-    .bottom {
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    .left {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      margin-top: 50px;
-      .left {
-        display: flex;
-        align-items: center;
 
-        .logo {
-          font-weight: bold;
-          font-size: 0.7rem;
-          text-transform: uppercase;
-        }
+      .logo {
+        font-weight: bold;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+      }
 
-        .copyright {
-          margin-left: 1rem;
-          font-size: 0.7rem;
-          color: #808080;
-        }
+      .copyright {
+        margin-left: 1rem;
+        font-size: 0.7rem;
+        color: #808080;
       }
     }
-    .right {
-      img {
-        width: 20rem;
-      }
+  }
+  .right {
+    img {
+      width: 20rem;
     }
   }
 }

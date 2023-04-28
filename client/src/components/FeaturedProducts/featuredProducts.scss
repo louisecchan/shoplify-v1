@@ -20,8 +20,8 @@
     .bottom {
       flex-direction: column !important;
       height: 50vh !important;
-      margin-top: 27rem;
-      position: absolute !important;
+      margin-top: 35rem;
+      position: relative !important;
       left: 25% !important;
       .card-container {
         height: 100% !important;
@@ -37,18 +37,8 @@
 }
 
 .featuredProducts {
+  height: 100vh;
   margin: 100px 200px;
-
-  .reveal {
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 2s all ease;
-  }
-  .reveal.active {
-    transform: translateY(0);
-    opacity: 1;
-  }
 
   .top {
     display: flex;
@@ -78,4 +68,16 @@
   display: flex;
   justify-content: center;
   gap: 50px;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
 }

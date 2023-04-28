@@ -9,8 +9,9 @@ const Navbar = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const [open, setOpen] = useState(false);
   const products = useSelector((state) => state.cart.products);
+
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <button
         className="hamburger"
         onClick={() => {
@@ -94,9 +95,10 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
+
+        {open && <Cart />}
       </div>
-      {open && <Cart />}
-    </div>
+    </nav>
   );
 };
 

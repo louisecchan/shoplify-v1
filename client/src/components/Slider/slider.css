@@ -2,7 +2,7 @@
   .slider {
     width: 94% !important;
     margin-left: 0.7rem !important;
-    margin-top: -1.7rem !important;
+    margin-top: -1rem !important;
   }
   .slider .container-1 {
     display: none !important;
@@ -14,7 +14,7 @@
     -ms-transition: all 1s ease;
     -o-transition: all 1s ease;
     width: 200vw;
-    height: 100%;
+    height: 95%;
     display: flex !important;
   }
   .slider .container-2 img {
@@ -39,7 +39,7 @@
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
   width: 200vw;
-  height: 100%;
+  height: 93%;
   display: flex;
 }
 .slider .container-1 img {

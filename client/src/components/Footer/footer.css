@@ -1,12 +1,40 @@
 @media screen and (max-width: 420px) {
   .footer {
     width: 100vw !important;
-    height: 50vh !important;
-    margin: rem 2rem !important;
+    height: 140vh !important;
+    margin: 4rem 2rem !important;
+  }
+  .footer hr {
+    display: block !important;
+    height: 1px;
+    background-color: #efeeee;
+    border: none;
+    margin-bottom: 2rem !important;
+    width: 83vw !important;
+  }
+  .footer .top {
+    flex-direction: column !important;
+  }
+  .footer .top .item .about-desc {
+    width: 80vw !important;
+  }
+  .footer .bottom {
+    margin-top: 6rem !important;
+    flex-direction: column !important;
+    width: 80vw !important;
+  }
+  .footer .bottom .left {
+    margin-left: -7.4rem !important;
+  }
+  .footer .bottom .right {
+    margin-left: 1rem !important;
   }
 }
 .footer {
   margin: 100px 200px 20px 200px;
+}
+.footer hr {
+  display: none;
 }
 .footer .top {
   display: flex;

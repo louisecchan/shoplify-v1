@@ -1,7 +1,13 @@
 @media screen and (max-width: 420px) {
   .card {
-    width: 100vw !important;
+    flex: 1 !important;
+    width: 50vw !important;
     height: 100vh;
+  }
+  .card .image span {
+    position: absolute;
+    top: 0.5rem !important;
+    left: 0.5rem !important;
   }
 }
 .normal-text {

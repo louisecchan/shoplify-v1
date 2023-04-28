@@ -3,6 +3,19 @@
     width: 100vw !important;
     height: 30vh !important;
   }
+  .contact .wrapper {
+    flex-direction: column !important;
+  }
+  .contact .wrapper span {
+    padding-right: 0px !important;
+    font-size: 0.8rem !important;
+  }
+  .contact .wrapper input {
+    margin-top: 3rem !important;
+  }
+  .contact .icons {
+    margin-left: -2.5rem !important;
+  }
 }
 .contact {
   padding: 15px;

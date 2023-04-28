@@ -11,7 +11,6 @@
     width: 100%;
     height: calc(100vh - 60px);
     background-color: white;
-    border-top: 1px solid black;
     display: none;
     z-index: 1;
   }
@@ -56,7 +55,6 @@
 }
 
 .hamburger {
-  // removes default border on button element
   border: 0;
   height: 40px;
   width: 40px;
@@ -65,7 +63,6 @@
   background-color: transparent;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
-  // positions the icon to the right and center aligns it vertically
   position: absolute;
   top: 50%;
   right: 25px;
@@ -78,15 +75,15 @@
 }
 
 .navbar {
-  height: 80px;
-  // width: 100%;
-  margin-top: 0.3rem;
-  padding: 10px 30px;
-  gap: 25px;
   position: relative;
   display: flex;
   align-items: center; // items centered vertically
-  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  padding: 10px 30px;
+  margin-top: 0.3rem;
+  // gap: 25px;
+  // justify-content: space-between;
   font-family: "on9jai";
   font-size: 11.5px;
   text-transform: uppercase;

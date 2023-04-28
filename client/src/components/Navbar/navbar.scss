@@ -82,8 +82,6 @@
   width: 100%;
   padding: 10px 30px;
   margin-top: 0.3rem;
-  // gap: 25px;
-  // justify-content: space-between;
   font-family: "on9jai";
   font-size: 11.5px;
   text-transform: uppercase;
@@ -129,6 +127,10 @@
   .un:visited {
     text-decoration: none;
     color: #000000;
+  }
+
+  .icons a:visited {
+    color: #000;
   }
 
   .sale {

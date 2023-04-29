@@ -3,6 +3,10 @@
     height: 160vh !important;
     padding-bottom: 10rem !important;
     padding-left: 1rem !important;
+
+    h1 {
+      margin-left: -2rem !important;
+    }
   }
 }
 
@@ -11,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   padding-left: 30px;
-  padding-top: 100px;
+  padding-top: 4rem;
   -webkit-font-smoothing: antialiased;
 
   .contentStory {
@@ -31,8 +35,23 @@
     -webkit-animation: fadeIn 3s;
   }
 
+  .storyHeading {
+    font-size: 1.8rem;
+    font-family: on9jai2;
+    color: black;
+  }
+
+  h1 {
+    padding-bottom: 2rem;
+  }
+
   span {
     flex: 1;
+  }
+
+  p {
+    margin-left: -5.2rem;
+    text-align: justify;
   }
 
   @keyframes fadeIn {

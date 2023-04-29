@@ -34,27 +34,27 @@ const Navbar = () => {
             <img src="/img/locale.png" className="localeImg" alt="" />
           </li>
           <li>
-            <Link className="localeImgM link un unM" to="/">
+            <Link className="localeImgM link un" to="/">
               Language
             </Link>
           </li>
           <li>
-            <Link className="sale link un unM" to="/">
+            <Link className="sale link un" to="/">
               Sale
             </Link>
           </li>
           <li>
-            <Link className="link un unM" to="/products/1">
+            <Link className="link un" to="/products/1">
               Beauty
             </Link>
           </li>
           <li>
-            <Link className="link un unM" to="/products/2">
+            <Link className="link un" to="/products/2">
               Fashion
             </Link>
           </li>
           <li>
-            <Link className="link un unM" to="/products/3">
+            <Link className="link un" to="/products/3">
               Wellness
             </Link>
           </li>
@@ -69,22 +69,22 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link className="link un unM story" to="/story">
+            <Link className="link un story" to="/story">
               About
             </Link>
           </li>
           <li>
-            <Link className="link un unM" to="/stores">
+            <Link className="link un" to="/stores">
               Stores
             </Link>
           </li>
           <li>
-            <Link className="link un unM" to="/login">
+            <Link className="link un" to="/login">
               Login
             </Link>
           </li>
           <li>
-            <Link className="link un unM" to="/register">
+            <Link className="link un" to="/register">
               Register
             </Link>
           </li>
@@ -95,7 +95,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="iconsM">
-            <Link className="cartText un unM" onClick={() => setOpen(!open)}>
+            <Link className="cartText un" onClick={() => setOpen(!open)}>
               Shopping Bag&nbsp;(<span>{products.length}</span>)
             </Link>
           </li>

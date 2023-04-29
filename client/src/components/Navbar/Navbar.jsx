@@ -9,6 +9,8 @@ import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
 const Navbar = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
+  const closeMobileMenu = () => setIsNavExpanded(false);
+
   // hamburger
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
@@ -43,27 +45,43 @@ const Navbar = () => {
             <img src="/img/locale.png" className="localeImg" alt="" />
           </li>
           <li>
-            <Link className="localeImgM link un" to="/">
+            <Link
+              className="localeImgM link un"
+              to="/"
+              onClick={closeMobileMenu}
+            >
               Language
             </Link>
           </li>
           <li>
-            <Link className="sale link un" to="/">
+            <Link className="sale link un" to="/" onClick={closeMobileMenu}>
               Sale
             </Link>
           </li>
           <li>
-            <Link className="link un" to="/products/1">
+            <Link
+              className="link un"
+              to="/products/1"
+              onClick={closeMobileMenu}
+            >
               Beauty
             </Link>
           </li>
           <li>
-            <Link className="link un" to="/products/2">
+            <Link
+              className="link un"
+              to="/products/2"
+              onClick={closeMobileMenu}
+            >
               Fashion
             </Link>
           </li>
           <li>
-            <Link className="link un" to="/products/3">
+            <Link
+              className="link un"
+              to="/products/3"
+              onClick={closeMobileMenu}
+            >
               Wellness
             </Link>
           </li>
@@ -73,27 +91,31 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link className="shop-nameM" to="/">
+            <Link className="shop-nameM" to="/" onClick={closeMobileMenu}>
               SHOPLIFY
             </Link>
           </li>
           <li>
-            <Link className="link un story" to="/story">
+            <Link
+              className="link un story"
+              to="/story"
+              onClick={closeMobileMenu}
+            >
               About
             </Link>
           </li>
           <li>
-            <Link className="link un" to="/stores">
+            <Link className="link un" to="/stores" onClick={closeMobileMenu}>
               Stores
             </Link>
           </li>
           <li>
-            <Link className="link un" to="/login">
+            <Link className="link un" to="/login" onClick={closeMobileMenu}>
               Login
             </Link>
           </li>
           <li>
-            <Link className="link un" to="/register">
+            <Link className="link un" to="/register" onClick={closeMobileMenu}>
               Register
             </Link>
           </li>

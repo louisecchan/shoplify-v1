@@ -1,3 +1,10 @@
+@media screen and (max-width: 420px) {
+  .cart {
+    right: 6.6rem !important;
+    top: 10.5rem !important;
+  }
+}
+
 .cart {
   position: absolute;
   right: 6rem;

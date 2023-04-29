@@ -117,6 +117,10 @@
       margin-left: 0rem !important;
     }
 
+    .icons {
+      margin-left: 0rem !important;
+    }
+
     .cartIcon {
       display: none !important;
       .muiIcons {
@@ -131,7 +135,24 @@
     .sale {
       margin-left: 0rem !important;
     }
+
+    .un {
+      display: none !important;
+    }
+
+    .un:hover {
+      display: none !important;
+    }
+
+    .unM {
+      display: block !important;
+    }
+
+    .unM:hover {
+      text-decoration: underline !important;
+    }
   }
+
   .navigation-menu li a {
     width: 100%;
     padding: 0.5rem 0;
@@ -150,6 +171,10 @@
 .link:visited {
   text-decoration: none;
   color: #000000;
+}
+
+.unM {
+  display: none;
 }
 
 // Links underline animation

@@ -5,29 +5,33 @@ import { useSelector } from "react-redux";
 import "./navbar.scss";
 import { Hamburger } from "./Hamburger";
 import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
+  // hamburger
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+  const toggleHamburger = () => {
+    setHamburgerOpen(!hamburgerOpen);
+  };
+
+  // cart
   const [open, setOpen] = useState(false);
   const products = useSelector((state) => state.cart.products);
 
-  const hamburgerLogo = <FontAwesomeIcon icon={faBars} />;
-  const closeBtn = <FontAwesomeIcon icon={faXmark} />;
-
   return (
     <nav className="navbar">
-      <button
+      <div
         className="hamburger"
         onClick={() => {
           setIsNavExpanded(!isNavExpanded);
         }}
       >
-        <Hamburger />
-      </button>
+        <div className="hamburger" onClick={toggleHamburger}>
+          <Hamburger isOpen={hamburgerOpen} />
+        </div>
+      </div>
 
       <div
         className={

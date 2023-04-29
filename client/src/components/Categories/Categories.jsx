@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 const Categories = () => {
   return (
     <div className="categories">
-      {/* <div className="categories-container"> */}
       <div className="col">
         <div className="row">
           <img

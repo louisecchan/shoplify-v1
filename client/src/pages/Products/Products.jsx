@@ -29,7 +29,7 @@ const Products = () => {
     <div className="products">
       <div className="left">
         <div className="filterItem">
-          <h2>Product Categories</h2>
+          <h1>Product Categories</h1>
           {data?.map((item) => (
             <div className="inputItem" key={item.id}>
               <input

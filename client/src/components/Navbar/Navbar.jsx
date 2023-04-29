@@ -3,12 +3,20 @@ import { Link } from "react-router-dom";
 import Cart from "../Cart/Cart";
 import { useSelector } from "react-redux";
 import "./navbar.scss";
+import { Hamburger } from "./Hamburger";
 import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
+
   const [open, setOpen] = useState(false);
   const products = useSelector((state) => state.cart.products);
+
+  const hamburgerLogo = <FontAwesomeIcon icon={faBars} />;
+  const closeBtn = <FontAwesomeIcon icon={faXmark} />;
 
   return (
     <nav className="navbar">
@@ -18,12 +26,9 @@ const Navbar = () => {
           setIsNavExpanded(!isNavExpanded);
         }}
       >
-        <svg viewBox="0 0 100 80" width="40" height="40">
-          <rect width="100" height="3"></rect>
-          <rect y="30" width="100" height="3"></rect>
-          <rect y="60" width="100" height="3"></rect>
-        </svg>
+        <Hamburger />
       </button>
+
       <div
         className={
           isNavExpanded ? "navigation-menu expanded" : "navigation-menu"

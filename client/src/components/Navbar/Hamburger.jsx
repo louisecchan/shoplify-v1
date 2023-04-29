@@ -36,11 +36,13 @@ export const Hamburger = ({ isOpen }) => {
               transform-origin: 7.5px -1px;
               transform: ${isOpen ? "rotate(45deg)" : "rotate(0)"};
             }
+
             .burger2 {
               transform-origin: 1px;
               transform: ${isOpen ? "translateX(100%)" : "translateX(0)"};
               opacity: ${isOpen ? 0 : 1};
             }
+
             .burger3 {
               transform-origin: 1px;
               transform: ${isOpen ? "rotate(-45deg)" : "rotate(0)"};

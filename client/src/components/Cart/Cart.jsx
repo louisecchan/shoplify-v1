@@ -5,10 +5,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { removeItem, resetCart } from "../../redux/cartReducer";
 import { loadStripe } from "@stripe/stripe-js";
 import { makeRequest } from "../../makeRequest";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Cart = () => {
   const products = useSelector((state) => state.cart.products);
   const dispatch = useDispatch();
+
+  // const closeCartWindow = () =>
 
   const totalPrice = () => {
     let total = 0;
@@ -38,7 +42,12 @@ const Cart = () => {
 
   return (
     <div className="cart">
-      <h1>Products in your cart</h1>
+      <h1>
+        Products in your cart{" "}
+        <button className="cartCloseBtn">
+          <FontAwesomeIcon icon={faXmark} />
+        </button>
+      </h1>
       {products?.map((item) => (
         <div className="item" key={item.id}>
           <img src={process.env.REACT_APP_UPLOAD_URL + item.img} alt="" />

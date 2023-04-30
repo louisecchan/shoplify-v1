@@ -40,7 +40,12 @@ const FeaturedProducts = ({ type }) => {
         {error ? (
           <span>Something went wrong!</span>
         ) : loading ? (
-          "loading"
+          <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         ) : (
           data?.map((item) => (
             <div className="card-container">

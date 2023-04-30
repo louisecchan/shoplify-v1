@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./cart.scss";
 import DeleteOutlinedIcon from "@mui/icons-material/DeleteOutlined";
 import { useDispatch, useSelector } from "react-redux";

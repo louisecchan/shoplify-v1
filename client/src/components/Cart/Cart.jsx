@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import "./cart.scss";
 import DeleteOutlinedIcon from "@mui/icons-material/DeleteOutlined";
 import { useDispatch, useSelector } from "react-redux";
@@ -12,7 +12,7 @@ const Cart = () => {
   const products = useSelector((state) => state.cart.products);
   const dispatch = useDispatch();
 
-  // const closeCartWindow = () =>
+  const [toggle, setToggle] = useState(true);
 
   const totalPrice = () => {
     let total = 0;
@@ -41,39 +41,45 @@ const Cart = () => {
   };
 
   return (
-    <div className="cart">
-      <h1>
-        Products in your cart{" "}
-        <button className="cartCloseBtn">
-          <FontAwesomeIcon icon={faXmark} />
-        </button>
-      </h1>
-      {products?.map((item) => (
-        <div className="item" key={item.id}>
-          <img src={process.env.REACT_APP_UPLOAD_URL + item.img} alt="" />
-          <div className="details">
-            <h1>{item.title}</h1>
-            <p>{item.desc?.substring(0, 30)}</p>
-            {/* if there's no description, no need to execute the substring function */}
-            <div className="price">
-              {item.quantity} x £{item.price}
-            </div>
+    <>
+      {toggle && (
+        <div className="cart">
+          <div className="cartHeader">
+            <h1>Products in your cart </h1>
+            <button className="cartCloseBtn" onClick={() => setToggle(!toggle)}>
+              <FontAwesomeIcon icon={faXmark} />
+            </button>
           </div>
-          <DeleteOutlinedIcon
-            className="delete"
-            onClick={() => dispatch(removeItem(item.id))}
-          />
+
+          {products?.map((item) => (
+            <div className="item" key={item.id}>
+              <img src={process.env.REACT_APP_UPLOAD_URL + item.img} alt="" />
+
+              <div className="details">
+                <h1>{item.title}</h1>
+                <p>{item.desc?.substring(0, 30)}</p>
+                <div className="price">
+                  {item.quantity} x £{item.price}
+                </div>
+              </div>
+              <DeleteOutlinedIcon
+                className="delete"
+                onClick={() => dispatch(removeItem(item.id))}
+              />
+            </div>
+          ))}
+
+          <div className="total">
+            <span>SUBTOTAL</span>
+            <span>£{totalPrice()}</span>
+          </div>
+          <button onClick={handlePayment}>PROCEED TO CHECKOUT</button>
+          <span className="reset" onClick={() => dispatch(resetCart())}>
+            RESET CART
+          </span>
         </div>
-      ))}
-      <div className="total">
-        <span>SUBTOTAL</span>
-        <span>£{totalPrice()}</span>
-      </div>
-      <button onClick={handlePayment}>PROCEED TO CHECKOUT</button>
-      <span className="reset" onClick={() => dispatch(resetCart())}>
-        RESET CART
-      </span>
-    </div>
+      )}
+    </>
   );
 };
 

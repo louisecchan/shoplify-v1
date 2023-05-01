@@ -49,7 +49,7 @@ const Navbar = () => {
           <li>
             <Link
               className="localeImgM link un"
-              to="/"
+              to="/underconstruction"
               onClick={closeMobileMenu}
             >
               Language

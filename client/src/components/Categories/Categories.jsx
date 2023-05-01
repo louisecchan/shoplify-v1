@@ -11,19 +11,17 @@ const Categories = () => {
             src="https://res.cloudinary.com/dlmgs0z2s/image/upload/v1681216747/category-sale_suljcy.png"
             alt="Sale"
           />
-          <button>
-            <Link className="link" to="/">
-              Sale
-            </Link>
-          </button>
+          <Link className="link-2" to="/underconstruction">
+            <button className="categories-btn"> Sale</button>
+          </Link>
         </div>
         <div className="row">
           <img
             src="https://res.cloudinary.com/dlmgs0z2s/image/upload/v1681219442/category-skincare_jvlwi5.png"
             alt="Beauty"
           />
-          <button>
-            <Link className="link" to="/products/1">
+          <button className="categories-btn">
+            <Link className="link-2" to="/products/1">
               Beauty
             </Link>
           </button>
@@ -36,9 +34,11 @@ const Categories = () => {
             src="https://res.cloudinary.com/dlmgs0z2s/image/upload/v1681932506/margiela_uhylsy.jpg"
             alt="Fashion"
           />
-          <button>
-            <Link className="link" to="/products/2">
-              Fashion
+
+          <button className="categories-btn">
+            {" "}
+            <Link className="link-2" to="/products/2">
+              Fashion{" "}
             </Link>
           </button>
         </div>
@@ -51,8 +51,8 @@ const Categories = () => {
                 src="https://res.cloudinary.com/dlmgs0z2s/image/upload/v1681221133/category-supplements_qvgc4r.png"
                 alt=""
               />
-              <button>
-                <Link className="link" to="/">
+              <button className="categories-btn">
+                <Link className="link-2" to="/underconstruction">
                   Supplements
                 </Link>
               </button>
@@ -64,11 +64,9 @@ const Categories = () => {
                 src="https://res.cloudinary.com/dlmgs0z2s/image/upload/v1681223160/category-aromatherapy_i5ylrx.png"
                 alt=""
               />
-              <button>
-                <Link className="link" to="/">
-                  Aromatherapy
-                </Link>
-              </button>
+              <Link className="link-2" to="/underconstruction">
+                <button className="categories-btn">Aromatherapy</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -77,8 +75,8 @@ const Categories = () => {
             src="https://res.cloudinary.com/dlmgs0z2s/image/upload/v1681224387/category-yoga-accessories_imimxf.png"
             alt=""
           />
-          <button>
-            <Link className="link" to="/">
+          <button className="categories-btn">
+            <Link className="link-2" to="/underconstruction">
               Yoga Accessories
             </Link>
           </button>

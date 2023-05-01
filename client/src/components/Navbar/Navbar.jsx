@@ -42,7 +42,9 @@ const Navbar = () => {
       >
         <ul>
           <li>
-            <img src="/img/locale.png" className="localeImg" alt="" />
+            <Link to="/underconstruction" onClick={closeMobileMenu}>
+              <img src="/img/locale.png" className="localeImg" alt="" />
+            </Link>
           </li>
           <li>
             <Link
@@ -54,7 +56,11 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link className="sale link un" to="/" onClick={closeMobileMenu}>
+            <Link
+              className="sale link un"
+              to="/underconstruction"
+              onClick={closeMobileMenu}
+            >
               Sale
             </Link>
           </li>
@@ -86,7 +92,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link className="link shop-name" to="/">
+            <Link className="link" id="shop-name" to="/">
               SHOPLIFY
             </Link>
           </li>
@@ -127,7 +133,7 @@ const Navbar = () => {
           </li>
           <li className="iconsM">
             <Link className="cartText un" onClick={() => setOpen(!open)}>
-              Shopping Bag&nbsp;(<span>{products.length}</span>)
+              <span>Shopping Bag</span>
             </Link>
           </li>
         </ul>

@@ -17,9 +17,20 @@
   }
 }
 
+.link-2 {
+  font-size: 0.7rem;
+  text-decoration: none;
+}
+
+.link-2:visited {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+}
+
 .categories {
   display: flex;
-  height: 80vh;
+  height: 100vh;
   gap: 10px;
   margin: 25px;
 
@@ -41,7 +52,7 @@
     position: relative;
     overflow: hidden;
 
-    button {
+    .categories-btn {
       position: absolute;
       min-width: 100px;
       width: fit-content;
@@ -61,15 +72,15 @@
       font-weight: 500;
     }
 
-    button:hover {
-      background-color: black;
-      color: white;
-      transition: 0.3s ease;
-      -webkit-transition: 0.3s ease;
-      -moz-transition: 0.3s ease;
-      -ms-transition: 0.3s ease;
-      -o-transition: 0.3s ease;
-    }
+    // .categories-btn:hover {
+    //   background-color: black;
+    //   color: white;
+    //   transition: 0.3s ease;
+    //   -webkit-transition: 0.3s ease;
+    //   -moz-transition: 0.3s ease;
+    //   -ms-transition: 0.3s ease;
+    //   -o-transition: 0.3s ease;
+    // }
 
     img {
       width: 100%;

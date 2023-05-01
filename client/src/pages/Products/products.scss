@@ -1,6 +1,7 @@
 @media screen and (max-width: 420px) {
   .products {
-    flex-direction: column;
+    flex-direction: column !important;
+    margin-bottom: 40rem;
 
     h1 {
       font-size: 17px !important;
@@ -16,7 +17,7 @@
 
 .products {
   height: 100vh;
-  padding: 30px 50px;
+  padding: 90px 50px;
   display: flex;
 
   .left {

@@ -12,7 +12,7 @@ const Contact = () => {
         <div className="mail">
           <span>Sign up for email updates and promotions</span>
           <input type="text" placeholder="Email address" />
-          <button>SUBSCRIBE</button>
+          <button class="subscribe-btn">SUBSCRIBE</button>
         </div>
         <div className="icons">
           <FacebookIcon className="icon" />

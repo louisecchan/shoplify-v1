@@ -1,12 +1,16 @@
 @media screen and (max-width: 720px) {
   .contact {
     width: 100vw !important;
-    height: 30vh !important;
+    height: 40vh !important;
 
     .wrapper {
       flex-direction: column !important;
 
+      .mail {
+        margin-top: 7rem !important;
+      }
       span {
+        padding-left: 0.5rem !important;
         padding-right: 0px !important;
         font-size: 0.8rem !important;
       }
@@ -39,28 +43,38 @@
     }
 
     input {
-      padding: 10px;
+      height: 18px;
+      padding: 10.5px;
       font-size: 12px;
+      border: 1px solid rgb(186, 185, 185);
+      border-radius: 0px;
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      -ms-border-radius: 0px;
+      -o-border-radius: 0px;
     }
 
     input:focus {
+      border: 1px solid #000000;
       outline: none;
     }
 
-    button {
-      padding: 10px;
+    .subscribe-btn {
+      height: 40.3px;
       font-size: 12px;
       color: #ffffff;
       background-color: #000000;
-      margin-left: -2px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      margin-left: 5px;
       cursor: pointer;
-      border: 2px solid black;
+      border: 1px solid black;
     }
 
-    button:hover {
+    .subscribe-btn:hover {
       color: #000000;
       background-color: #ffffff;
-      border: 2px solid black;
+      border: 1px solid black;
       transition: 0.3s;
       -webkit-transition: 0.3s;
       -moz-transition: 0.3s;

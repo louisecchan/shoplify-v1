@@ -10,6 +10,7 @@ import Stores from "./pages/Stores/Stores";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import Profile from "./pages/Profile/Profile";
+import UnderConstruction from "./pages/UnderConstruction/UnderConstruction";
 import { Col, Row } from "antd";
 
 // stylesheet
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
       {
         path: "/profile",
         element: <Profile />,
+      },
+      {
+        path: "/underconstruction",
+        element: <UnderConstruction />,
       },
     ],
   },

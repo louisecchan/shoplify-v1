@@ -38,7 +38,7 @@ const FeaturedProducts = ({ type }) => {
       </div>
       <div className="bottom">
         {error ? (
-          <span>Something went wrong!</span>
+          <span className="errMessage">Something went wrong!</span>
         ) : loading ? (
           <div class="lds-ring">
             <div></div>

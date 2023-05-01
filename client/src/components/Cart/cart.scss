@@ -1,12 +1,13 @@
 @media screen and (max-width: 420px) {
   .cart {
-    right: 6.6rem !important;
+    right: 4.6rem !important;
     top: 10.5rem !important;
   }
 }
 
 .cart {
   position: absolute;
+  width: 330px;
   right: 6rem;
   top: 5.5rem;
   z-index: 999;
@@ -76,6 +77,10 @@
     font-weight: 500;
     font-size: 12px;
     margin-bottom: 20px;
+  }
+
+  .checkoutBtn {
+    width: 100%;
   }
 
   .cartCloseBtn {

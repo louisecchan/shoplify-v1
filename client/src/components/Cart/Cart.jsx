@@ -73,7 +73,9 @@ const Cart = () => {
             <span>SUBTOTAL</span>
             <span>£{totalPrice()}</span>
           </div>
-          <button onClick={handlePayment}>PROCEED TO CHECKOUT</button>
+          <button onClick={handlePayment} className="checkoutBtn">
+            PROCEED TO CHECKOUT
+          </button>
           <span className="reset" onClick={() => dispatch(resetCart())}>
             RESET CART
           </span>

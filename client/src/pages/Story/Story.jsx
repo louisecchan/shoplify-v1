@@ -6,9 +6,8 @@ const Story = () => {
     <div className="containerStory">
       <span></span>
       <h1 className="storyHeading fade-in">Our Story</h1>
+      <span></span>
       <div className="contentStory fade-in">
-        <br></br>
-        <br></br>
         <br></br>
         <br></br>
         <p>

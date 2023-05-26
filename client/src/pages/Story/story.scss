@@ -16,10 +16,11 @@
   justify-content: space-between;
   padding-left: 30px;
   padding-top: 4rem;
+  padding-bottom: 6rem;
   -webkit-font-smoothing: antialiased;
 
   .contentStory {
-    flex: 2;
+    flex: 1;
     font-size: 14px;
     color: rgb(100, 98, 98);
     line-height: 1.5;
@@ -42,7 +43,7 @@
   }
 
   h1 {
-    padding-bottom: 2rem;
+    padding-top: 2rem;
   }
 
   span {

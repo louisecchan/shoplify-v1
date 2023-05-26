@@ -1,4 +1,4 @@
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 720px) {
   .footer {
     width: 100vw !important;
     height: 140vh !important;
@@ -19,7 +19,7 @@
     width: 80vw !important;
   }
   .footer .bottom {
-    margin-top: 6rem !important;
+    margin-top: 9rem !important;
     flex-direction: column !important;
     width: 80vw !important;
   }
@@ -27,7 +27,7 @@
     margin-left: -7.4rem !important;
   }
   .footer .bottom .right {
-    margin-left: 1rem !important;
+    margin-left: 0.8rem !important;
   }
 }
 .footer {

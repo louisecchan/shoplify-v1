@@ -1,5 +1,12 @@
+@media screen and (max-width: 420px) {
+  .cart {
+    right: 4.6rem !important;
+    top: 10.5rem !important;
+  }
+}
 .cart {
   position: absolute;
+  width: 330px;
   right: 6rem;
   top: 5.5rem;
   z-index: 999;
@@ -7,12 +14,20 @@
   padding: 20px;
   box-shadow: 1px 2px 12px -3px rgba(204, 204, 204, 0.59);
 }
-.cart h1 {
+.cart .cartHeader {
+  display: flex;
   margin-bottom: 30px;
+}
+.cart .cartHeader h1 {
+  flex: 16;
   color: rgb(29, 29, 29);
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
+}
+.cart .cartHeader .cartCloseBtn {
+  flex: 1;
+  background-color: transparent;
 }
 .cart .item {
   display: flex;
@@ -49,6 +64,20 @@
   font-weight: 500;
   font-size: 12px;
   margin-bottom: 20px;
+}
+.cart .checkoutBtn {
+  width: 100%;
+}
+.cart .cartCloseBtn {
+  display: inline-block;
+  width: 12px;
+  padding: 0px;
+  background-color: white;
+  margin-bottom: 0px;
+}
+.cart .cartCloseBtn:hover {
+  background-color: white;
+  color: black;
 }
 .cart button {
   width: 250px;

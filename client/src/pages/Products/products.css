@@ -1,11 +1,20 @@
 @media screen and (max-width: 420px) {
   .products {
-    flex-direction: column;
+    flex-direction: column !important;
+    margin-bottom: 40rem;
+  }
+  .products h1 {
+    font-size: 17px !important;
+    font-weight: 700 !important;
+  }
+  .products h2 {
+    padding-top: 2rem !important;
+    font-size: 14px !important;
   }
 }
 .products {
   height: 100vh;
-  padding: 30px 50px;
+  padding: 90px 50px;
   display: flex;
 }
 .products .left {
@@ -18,6 +27,7 @@
   font-size: 12px;
   margin-bottom: 30px;
 }
+.products .left .filterItem h1,
 .products .left .filterItem h2 {
   font-size: 12px;
   font-weight: 600;

@@ -1,3 +1,17 @@
+@media screen and (max-width: 1024px) {
+  #shop-name {
+    font-size: 1rem !important;
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+  .muiIcons {
+    margin-left: 0rem !important;
+  }
+  .link {
+    font-size: 0.8rem !important;
+  }
+}
+
 .navbar {
   position: relative;
   display: flex;
@@ -13,11 +27,11 @@
   letter-spacing: -0.1px;
 }
 
-.shop-name {
+#shop-name {
   font-size: 2rem;
   font-weight: 600;
-  padding-left: 17.9rem;
-  padding-right: 17.5rem;
+  padding-left: 17.7rem;
+  padding-right: 18rem;
 }
 
 .navigation-menu {
@@ -41,35 +55,7 @@
   width: 100%;
 }
 
-.hamburger {
-  border: 0;
-  height: 40px;
-  width: 40px;
-  padding: 0.5rem;
-  border-radius: 50%;
-  background-color: transparent;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-  position: absolute;
-  top: 25%;
-  right: 18%;
-  z-index: 999;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  display: none;
-}
-
-.hamburger:hover {
-  background-color: transparent;
-}
-
 @media screen and (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
   .navigation-menu ul {
     flex-direction: column;
     position: absolute;
@@ -84,26 +70,26 @@
   }
   .navigation-menu li {
     text-align: center;
-    margin-left: -2.2rem;
+    position: relative;
+    top: 10%;
+    margin: 0.5rem !important;
+    margin-left: -3.2rem !important;
   }
   .navigation-menu li .localeImg {
     display: none;
   }
   .navigation-menu li .localeImgM {
     display: block !important;
+    margin-top: 3rem !important;
     margin-left: 0rem !important;
   }
-  .navigation-menu li .shop-name {
+  .navigation-menu li #shop-name {
     display: none;
   }
-  .navigation-menu li .shop-nameM {
-    display: block !important;
-    position: absolute !important;
-    top: -7% !important;
-    left: -32% !important;
-    font-weight: 700 !important;
-  }
   .navigation-menu li .story {
+    margin-left: 0rem !important;
+  }
+  .navigation-menu li .icons {
     margin-left: 0rem !important;
   }
   .navigation-menu li .cartIcon {
@@ -118,6 +104,10 @@
   .navigation-menu li .sale {
     margin-left: 0rem !important;
   }
+  .navigation-menu li .un {
+    display: inline !important;
+    background-position: 0 83% !important;
+  }
   .navigation-menu li a {
     width: 100%;
     padding: 0.5rem 0;
@@ -127,6 +117,10 @@
     display: block;
   }
 }
+.link {
+  font-size: 0.72rem;
+}
+
 .link:hover {
   text-decoration: none;
   color: #000000;
@@ -141,14 +135,14 @@
   display: inline-block;
   padding-bottom: 1px;
   background-image: linear-gradient(#575656 0 0);
-  background-position: 0 100%; /*OR bottom left*/
+  background-position: 0 100%;
   background-size: 0% 0.5px;
   background-repeat: no-repeat;
-  transition: background-size 0.3s, background-position 0s 0.3s; /*change after the size immediately*/
+  transition: background-size 0.3s, background-position 0s 0.3s;
 }
 
 .un:hover {
-  background-position: 100% 100%; /*OR bottom right*/
+  background-position: 100% 100%;
   background-size: 100% 1px;
   text-decoration: none;
   color: #000000;
@@ -168,7 +162,8 @@
 }
 
 .localeImg {
-  height: 16px;
+  height: 18px;
+  margin-top: 1px;
   cursor: pointer;
 }
 
@@ -195,7 +190,8 @@
   font-size: 16px;
   align-content: center;
   justify-content: center;
-  margin-left: 0.6rem;
+  margin-left: 0.3rem;
+  margin-top: 0.1rem;
 }
 .icons .cartIcon {
   position: relative;
@@ -208,7 +204,7 @@
   color: #fff;
   position: absolute;
   right: -4px;
-  top: -4px;
+  top: -3px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -221,4 +217,4 @@
 
 .cartText {
   display: none !important;
-}/*# sourceMappingURL=navbar.css.map */
+} /*# sourceMappingURL=navbar.css.map */

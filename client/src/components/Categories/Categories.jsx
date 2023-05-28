@@ -31,7 +31,7 @@ const Categories = () => {
       <div className="col">
         <div className="row" id="fashion">
           <img
-            src="https://res.cloudinary.com/dlmgs0z2s/image/upload/v1681932506/margiela_uhylsy.jpg"
+            src="https://res.cloudinary.com/dlmgs0z2s/image/upload/v1685310272/Category_Fashion_nsbxvw.jpg"
             alt="Fashion"
           />
 
@@ -48,7 +48,7 @@ const Categories = () => {
           <div className="col">
             <div className="row">
               <img
-                src="https://res.cloudinary.com/dlmgs0z2s/image/upload/v1681221133/category-supplements_qvgc4r.png"
+                src="https://res.cloudinary.com/dlmgs0z2s/image/upload/v1685309560/Category_Supplements_a74rjd.png"
                 alt=""
               />
               <button className="categories-btn">

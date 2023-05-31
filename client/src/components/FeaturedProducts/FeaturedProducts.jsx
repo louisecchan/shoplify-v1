@@ -30,10 +30,13 @@ const FeaturedProducts = ({ type }) => {
       <div className="top">
         <h1>{type} products</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sapiente
-          officiis sint ipsam libero. Omnis, numquam excepturi porro nisi quae
-          non eius culpa odio, doloremque laboriosam quisquam eligendi fugit
-          inventore.
+          Welcome to the new world order. Gone are the days of cut-and-dried
+          trend forecasting; the bell curve no longer rings true. Before the
+          internet became indelible in our lives, forecasting agencies would
+          seek out whispers in counterculture, then sell the trends to
+          corporations that would shower them upon the masses. The 20-year cycle
+          is no longer king either. Social media democratized, and scrambled,
+          all of it.
         </p>
       </div>
       <div className="bottom">

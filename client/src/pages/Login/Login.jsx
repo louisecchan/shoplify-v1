@@ -97,6 +97,7 @@ const Login = () => {
               <Form.Item
                 label="Password"
                 name="password"
+                className="testPassword"
                 // rules={[{ required: true }]}
               >
                 <Input.Password placeholder="Password" />

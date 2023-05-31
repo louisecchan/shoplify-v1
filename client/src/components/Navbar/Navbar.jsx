@@ -41,7 +41,7 @@ const Navbar = () => {
         }
       >
         <ul>
-          <li>
+          {/* <li>
             <Link to="/underconstruction" onClick={closeMobileMenu}>
               <img src="/img/locale.png" className="localeImg" alt="" />
             </Link>
@@ -54,7 +54,7 @@ const Navbar = () => {
             >
               Language
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               className="sale link un"

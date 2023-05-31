@@ -122,14 +122,14 @@ const Register = () => {
                 </button>
               </Form.Item>
             </Form>
-            <Typography.Paragraph className="form_help_text">
+            {/* <Typography.Paragraph className="form_help_text">
               Already have an account?
             </Typography.Paragraph>
             <Link to="/login">
               <button className="registerButton" htmlType="submit">
                 LOGIN
               </button>
-            </Link>
+            </Link> */}
           </Card>
         </Col>
       </Row>

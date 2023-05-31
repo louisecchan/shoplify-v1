@@ -47,6 +47,10 @@ label {
   -o-transition: ease 0.3s;
 }
 
+.testPassword:hover {
+  pointer-events: none !important;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;

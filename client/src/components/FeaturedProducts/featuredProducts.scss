@@ -13,6 +13,7 @@
       flex: 1 !important;
       letter-spacing: -0.1rem;
     }
+
     p {
       flex: 1 !important;
     }
@@ -30,7 +31,7 @@
       span {
         position: absolute;
         top: 0%;
-        left: 20%;
+        left: -9%;
       }
 
       .errMessage {
@@ -72,6 +73,10 @@
   display: flex;
   justify-content: center;
   gap: 50px;
+
+  .errMessage {
+    margin-top: 3rem;
+  }
 }
 
 .reveal {

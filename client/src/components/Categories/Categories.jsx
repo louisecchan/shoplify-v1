@@ -12,7 +12,7 @@ const Categories = () => {
             alt="Sale"
           />
           <Link className="link-2" to="/underconstruction">
-            <button className="categories-btn"> Sale</button>
+            <button className="categories-btn">Sale</button>
           </Link>
         </div>
         <div className="row">
@@ -20,11 +20,10 @@ const Categories = () => {
             src="https://res.cloudinary.com/dlmgs0z2s/image/upload/v1681219442/category-skincare_jvlwi5.png"
             alt="Beauty"
           />
-          <button className="categories-btn">
-            <Link className="link-2" to="/products/1">
-              Beauty
-            </Link>
-          </button>
+
+          <Link className="link-2" to="/products/1">
+            <button className="categories-btn">Beauty</button>
+          </Link>
         </div>
       </div>
       {/* </div> */}
@@ -33,14 +32,10 @@ const Categories = () => {
           <img
             src="https://res.cloudinary.com/dlmgs0z2s/image/upload/v1685310272/Category_Fashion_nsbxvw.jpg"
             alt="Fashion"
-          />
-
-          <button className="categories-btn">
-            {" "}
-            <Link className="link-2" to="/products/2">
-              Fashion{" "}
-            </Link>
-          </button>
+          />{" "}
+          <Link className="link-2" to="/products/2">
+            <button className="categories-btn">Fashion </button>
+          </Link>
         </div>
       </div>
       <div className="col col-l">
@@ -51,11 +46,9 @@ const Categories = () => {
                 src="https://res.cloudinary.com/dlmgs0z2s/image/upload/v1685309560/Category_Supplements_a74rjd.png"
                 alt=""
               />
-              <button className="categories-btn">
-                <Link className="link-2" to="/underconstruction">
-                  Supplements
-                </Link>
-              </button>
+              <Link className="link-2" to="/underconstruction">
+                <button className="categories-btn">Supplements</button>
+              </Link>
             </div>
           </div>
           <div className="col">
@@ -75,11 +68,10 @@ const Categories = () => {
             src="https://res.cloudinary.com/dlmgs0z2s/image/upload/v1681224387/category-yoga-accessories_imimxf.png"
             alt=""
           />
-          <button className="categories-btn">
-            <Link className="link-2" to="/underconstruction">
-              Yoga Accessories
-            </Link>
-          </button>
+
+          <Link className="link-2" to="/underconstruction">
+            <button className="categories-btn">Yoga Accessories</button>
+          </Link>
         </div>
       </div>
     </div>

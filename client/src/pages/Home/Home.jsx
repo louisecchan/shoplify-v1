@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "../../components/Slider/Slider";
 import "./home.scss";
 import FeaturedProducts from "../../components/FeaturedProducts/FeaturedProducts";
+import TrendingProducts from "../../components/TrendingProducts/TrendingProducts";
 import Categories from "../../components/Categories/Categories";
 import Contact from "../../components/Contact/Contact";
 const Home = () => {
@@ -10,7 +11,7 @@ const Home = () => {
       <Slider />
       <FeaturedProducts type="featured" />
       <Categories />
-      <FeaturedProducts type="trending" />
+      <TrendingProducts type="trending" />
       <Contact />
     </div>
   );

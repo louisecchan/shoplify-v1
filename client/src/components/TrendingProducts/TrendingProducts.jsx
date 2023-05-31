@@ -1,9 +1,9 @@
 import React from "react";
 import Card from "../Card/Card";
-import "./featuredProducts.scss";
+import "./trendingProducts.scss";
 import useFetch from "../../hooks/useFetch";
 
-const FeaturedProducts = ({ type }) => {
+const TrendingProducts = ({ type }) => {
   const { data, loading, error } = useFetch(
     `/products?populate=*&[filters][type][$eq]=${type}`
   );
@@ -30,12 +30,13 @@ const FeaturedProducts = ({ type }) => {
       <div className="top">
         <h1>{type} products</h1>
         <p>
-          We think of ourselves as a hands-on curator. For us make is integral
-          to our design philosophy. Inspired by the authenticity we can find in
-          nature, people and places, and we think it is the same quality we look
-          for in the products we choose. We like to work with brands who
-          understand and share this passion for make and quality, and good
-          design that is about living with thoughtful style.
+          Welcome to the new world order. Gone are the days of cut-and-dried
+          trend forecasting; the bell curve no longer rings true. Before the
+          internet became indelible in our lives, forecasting agencies would
+          seek out whispers in counterculture, then sell the trends to
+          corporations that would shower them upon the masses. The 20-year cycle
+          is no longer king either. Social media democratized, and scrambled,
+          all of it.
         </p>
       </div>
       <div className="bottom">
@@ -60,4 +61,4 @@ const FeaturedProducts = ({ type }) => {
   );
 };
 
-export default FeaturedProducts;
+export default TrendingProducts;

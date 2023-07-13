@@ -24,6 +24,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
+      <h1 id="shopname-mobilenav">SHOPLIFY</h1>
       <div
         className="hamburger"
         onClick={() => {
@@ -41,20 +42,6 @@ const Navbar = () => {
         }
       >
         <ul>
-          {/* <li>
-            <Link to="/underconstruction" onClick={closeMobileMenu}>
-              <img src="/img/locale.png" className="localeImg" alt="" />
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="localeImgM link un"
-              to="/underconstruction"
-              onClick={closeMobileMenu}
-            >
-              Language
-            </Link>
-          </li> */}
           <li>
             <Link
               className="sale link un"
@@ -96,11 +83,14 @@ const Navbar = () => {
               SHOPLIFY
             </Link>
           </li>
+
+          {/* fake link - act like a placeholder on navbar haha */}
           <li>
             <Link className="shop-nameM" to="/" onClick={closeMobileMenu}>
               SHOPLIFY
             </Link>
           </li>
+
           <li>
             <Link
               className="link un story"

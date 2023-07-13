@@ -74,6 +74,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  #shopname-mobilenav {
+    display: inline !important;
+    font-size: 1.2rem;
+    margin-left: -1rem;
+  }
+
   .navigation-menu ul {
     flex-direction: column;
     position: absolute;
@@ -150,8 +156,7 @@
 }
 
 #shopname-mobilenav {
-  font-size: 1.2rem;
-  margin-left: -1rem;
+  display: none;
 }
 
 .link {

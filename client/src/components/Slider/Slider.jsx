@@ -9,8 +9,10 @@ const Slider = () => {
   const data = [
     "https://res.cloudinary.com/dlmgs0z2s/image/upload/v1681136413/slider-photo-1_hbwhrj.jpg",
     "https://res.cloudinary.com/dlmgs0z2s/image/upload/v1681138564/slider-photo-3_huuszj.jpg",
-    "https://res.cloudinary.com/dlmgs0z2s/image/upload/v1682610428/slider-v-1_un6du6.jpg",
     "https://res.cloudinary.com/dlmgs0z2s/image/upload/v1682610428/slider-v-2_uwdmqi.jpg",
+    "https://res.cloudinary.com/dlmgs0z2s/image/upload/v1682610428/slider-v-1_un6du6.jpg",
+    //
+    // "https://res.cloudinary.com/dlmgs0z2s/image/upload/v1682610428/slider-v-2_uwdmqi.jpg",
   ];
 
   useEffect(() => {
